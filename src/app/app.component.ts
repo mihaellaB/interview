@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MainDataService } from './shared/services/main-data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'frontend-interview-test';
+  mainData$ = this.mainDataService.getMainData();
+
+  constructor(private mainDataService: MainDataService) {}
+
+  onSubmitNewsletter(): void {
+    // Log newsletter email to console
+  }
 }
