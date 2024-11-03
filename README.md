@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Assignment:
+1. Open app.component and try to connect the submit button, ie show in a console.log the value for the input when you press the button
+2. Use Angular’s *ngFor directive in slot.component.html to display each item’s name, type, and picture from the data input. Ensure that the image and name are displayed correctly.
+3. Use the notAdmin pipe to display "Admin" for users with this type and "User is not an admin" for all others. Integrate this in slot.component.html to modify how the user type is shown.
+4. Add a button in app.component.html that toggles visibility of only admin types in filteredData. Ensure that when toggled, only items with type: 'Admin' are displayed
+5. Extra: Add tests for main-data.service and not-admin pipe
+6. Extra: How this project can be optimized?
