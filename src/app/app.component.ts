@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private mainDataService: MainDataService) {}
 
-  onSubmitNewsletter(): void {
-    // Log newsletter email to console
+  onFilter(): void {
+    // get the filter value
   }
 }

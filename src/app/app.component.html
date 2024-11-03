@@ -1,7 +1,6 @@
-<app-slot></app-slot>
-
-<section class="newsletter">
-  <h2>Subscribe to our newsletter</h2>
-  <input type="email" placeholder="Enter your email address"/>
-  <button (click)="onSubmitNewsletter()">Subscribe</button>
+<section class="filters">
+  <input placeholder="Filter by" />
+  <button (click)="onFilter()">Filter</button>
 </section>
+
+<app-slot></app-slot>
